@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Source+Serif+Pro:wght@300&display=swap");
+/*Variables*/
+:root {
+  --lighter-gray: #282828;
+  --gold: #bd8527;
+  --royal-red: #bf454b;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+p {
+  font-size: 1.25em;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: var(--lighter-gray);
+}
+.sub-heading {
+  border-bottom: solid var(--gold) 1px;
+  width: 400px;
+  padding: 5px;
+  letter-spacing: 3px;
+}
+/*Nav styles*/
+.nav-link {
+  font-size: 1.5em;
+  color: var(--royal-red) !important;
+}
+
+.navbar-brand {
+  color: #f5f5f5;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  text-align: center;
+  border: solid 1px var(--royal-red);
+  padding: 0.5em;
+  margin-left: 1em;
+}
+.nav-item:hover {
+  border-bottom: solid 1px var(--gold);
+}
+.navbar-dark {
+  background-color: #000 !important;
+}
+/*Hero Styles*/
+.hero-container {
+  background-color: var(--lighter-gray);
+  color: #f5f5f5;
+  background-color: #000000;
+  background-image: linear-gradient(176deg, #000000 10%, #434343 94%);
+}
+#hero-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.3rem;
+}
+#hero-row h1 {
+  font-weight: 200;
+  letter-spacing: 2px;
+  line-height: 2.5em;
+}
+
+#arrow-down,
+#discover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#arrow-down {
+  font-size: 1.8rem;
+}
+#discover {
+  margin: 2em;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 4px;
+  color: var(--gold);
+}
+
+/*Best Seller Styles*/
+.best-seller {
+  background-color: #ccc;
+}
+#best-seller-title {
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 1.5em;
+}
+
+/*Songbird Styles*/
+.songbird-row,
+.about-row {
+  padding: 1.5em;
+  background-color: var(--lighter-gray);
+  color: white;
+}
+
+.in-stores-box {
+  background-color: #333;
+}
+@media screen and (min-width: 768px) {
+  .songbird-row,
+  .about-row {
+    padding: 7em;
+  }
+  #slider {
+    padding: 4em;
+  }
+  .songbird-row h4 {
+    font-size: 1.5rem;
+    line-height: 2em;
+    max-width: 65%;
+  }
+}
+.in-stores-box {
+  display: grid;
+  place-items: center;
+  padding: 1.8em;
+}
+
+#awards-row {
+  padding: 1rem;
+  line-height: 10rem;
+}
+
+/*Owl Carousel Styles*/
+.owl-nav button {
+  color: white !important;
+  font-size: 2.5em !important;
+}
+.overlay {
+  opacity: 0;
+  transition: 0.5s ease-in;
+  background-color: #111;
+  position: absolute;
+  width: 15em;
+  height: 15em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.item :hover {
+  opacity: 0.6;
+}
+.item:hover .overlay {
+  opacity: 1;
+}
+
+/*Footer Styles*/
+.footer {
+  background-color: black;
+  color: var(--royal-red);
+  padding: 4em;
+}
+
+/*Works page styles*/
+#fw-title {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.featured-works-panel {
+  background-color: black;
+}
+
+/*Card Styles*/
+.cards-container {
+  background-color: var(--lighter-gray);
+}
+.cards-container button {
+  background-color: var(--gold);
+  color: white;
+  border: none;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+.card-img-overlay {
+  position: absolute;
+  top: 60%;
+}
+.card:hover {
+  transform: scale(1.075);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+/*Hunger Games Styles*/
+.hg-hero-row {
+  background-color: #000;
+}
+.hg-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.testimonial-card {
+  background-color: var(--royal-red);
+  color: white;
+  text-align: center;
+  padding: 2em;
+}
